@@ -92,7 +92,11 @@ PHYRSTB     | In       | GPIO x, 10kOhm PullDown    | Enable, siehe Erklärung u
 
 ![RTL8201 Schematic](RTL8201_schematic.png "RTL8201 Schematic")
 
+Das REF_CLK-Signal wird hier über einen Jumper schaltbar gemacht. Dieser sollte eigentlich nicht nötig sein. Falls aber der das Clock-Signal verhindert, dass der ESP32 in den Boot-Modus gelangt, kann der Jumper geöffnet werden und der ESP32 sollte nicht mehr gestört werden. 
+
 Hinweis zum Shield-Pin: Nach meinen Nachforschungen soll die Schirmung des Steckers mit dem Gehäuse verbunden werden. Ich mache das hier über die Befestigungsbohrungen.
+
+[https://datasheet.lcsc.com/lcsc/1809191828_Realtek-Semicon-RTL8201F-VB-CG_C45044.pdf](https://datasheet.lcsc.com/lcsc/1809191828_Realtek-Semicon-RTL8201F-VB-CG_C45044.pdf)
 
 [https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/network/esp_eth.html](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/network/esp_eth.html)
 
