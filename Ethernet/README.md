@@ -1,5 +1,7 @@
 # Ethernet am ESP32 mit Micropython
 
+Der Ethernet-Treiber besteht aus zwei Teilen: dem MAC- und dem PHY-Controller.
+
 Der ESP32 enthält bereits einen MAC-Controller, sodass nur noch ein PHY-Controller benötigt wird, um Ethernet am ESP32 zu nutzen. Für einige PHY-Controller gibt es im ESP-IDF bereits eine API, die auch in MicroPython verfügbar ist. Konkret sind das die PHY-Controller:
 
  - DP83848
@@ -7,15 +9,40 @@ Der ESP32 enthält bereits einen MAC-Controller, sodass nur noch ein PHY-Control
  - LAN8720
  - RTL8201
 
+Für die Kommunikation zwischen MAC und PHY wird das MII (Media Independent Interface) bzw. RMII (Reduced Media Independent Interface) genutzt. Das MII besteht aus: 
+ - Transmitter Signals:
+   - TXC (Transmit Clock)
+   - TXD0-3 (Transmit Data Bit 0-3)
+   - TXEN (Transmit Enable)
+   - TXER (Transmit Error)
+ - Receiver Signals:
+   - RXC (Receive Clock)
+   - RXD0-3 (Receive Data Bit 0-3)
+   - RXDV (Receive Data Valid)
+   - RXER (Receive Error)
+   - CRS (Carrier Sense)
+   - COL (Collision Detect)
+ - Management Signals:
+   - MDIO (Management Data)
+   - MDC (Management Data Clock)
+
+Das beim RMII entfallen einige Signale:
+ - Transmit und Receive Clock werden durch ein Signal ersetzt (REF_CLK)
+ - die Clock-Frequenz wird von 25 auf 50 MHz angehoben, dafür werden nur 2 statt 4 Transmit bzw. Receive Data Bits benötigt
+ - RXDV und CRS werden gemultiplexed
+ - COL wird komplett entfernt
+
+Damit ist die Anzahl der benötigten Pins von 18 auf 9 reduziert.
+
 Ich habe nachfolgend eine Schaltung mit dem RTL8201 erstellt. Dieser Chip ist bei JLCPCB verfügbar. Hier meine Überlegungen zum Anschluss:
 
 ## MII/RMII Interface
 
-Im Beispiel ist die Variante CONFIG_ETH_RMII_CLK_INPUT gewählt. Dabei stellt der PHY-Controller das Clock-Signal zur Verfügung. Dieses Signal muss dann zu GPIO 0 am ESP32 geführt werden. Über GPIO 0 wird aber auch der Boot-Modus gewählt. Daher sollte der PHY (und damit auch das Clock-Signal) erst nach dem Boot-Vorgang gestartet werden. Dies kann über den Pin PHYRSTB am PHY gesteuer werden.
+Im Beispiel stellt der PHY das Clock-Signal zur Verfügung. Das ist in der aktuellen MicroPython-Version (19.1) die einzige Möglichkeit. Dieses Signal muss dann zu GPIO 0 am ESP32 geführt werden. Über GPIO 0 wird aber auch der Boot-Modus gewählt. Daher sollte der PHY (und damit auch das Clock-Signal) erst nach dem Boot-Vorgang gestartet werden. Dies kann über den Pin PHYRSTB am PHY gesteuer werden.
 
 Pin RTL8201 | Richtung | Anschluss          | Erklärung 
 ------------|----------|--------------------|----------
-TXC         | Out      | GPIO 0             | Transmit Clock, wird vom PHY zur Verfügung gestellt
+TXC         | Out      | GPIO 0             | Transmit Clock (Reference Clock), wird vom PHY zur Verfügung gestellt
 TXEN        | In       | GPIO 21            | Transmit Enable, festgelegt, nicht änderbar
 TXER        | In       | -                  | Transmit Error, für RMII nicht benötigt
 TXD[0]      | In       | GPIO 19            | Transmit Data, festgelegt, nicht änderbar
@@ -28,7 +55,7 @@ CRS         | In/Out   | GPIO 27            | Carrier Sense, festgelegt, nicht �
 RXDV        | Out      | 4.7kOhm PullUp     | Receive Data Valid, für RMII nicht benötigt
 RXD[0]      | Out      | GPIO 25            | Receive Data, festgelegt, nicht änderbar
 RXD[1]      | Out      | GPIO 26            | Receive Data, festgelegt, nicht änderbar
-RXD[2]/INTB | Out      | GPIO x             | Receive Data, für RMII nicht benötigt, alternativ Interrupt, wenn sich Linkstatus ändert
+RXD[2]/INTB | Out      | GPIO x             | Receive Data, für RMII nicht benötigt, alternativ Interrupt, wenn sich Linkstatus ändert (noch nicht getestet)
 RXD[3]      | Out      | -                  | Receive Data, für RMII nicht benötigt
 RXER        | Out      | 4.7kOhm PullDown   | Receive error, für RMII nicht benötigt
 
@@ -63,6 +90,21 @@ Pin RTL8201 | Richtung | Anschluss                  | Erklärung
 ------------|----------|----------------------------|----------
 PHYRSTB     | In       | GPIO x, 10kOhm PullDown    | Enable, siehe Erklärung unter MII/RMII-Interface
 
+![RTL8201 Schematic](RTL8201_schematic.png "RTL8201 Schematic")
+
+Hinweis zum Shield-Pin: Nach meinen Nachforschungen soll die Schirmung des Steckers mit dem Gehäuse verbunden werden. Ich mache das hier über die Befestigungsbohrungen.
+
+[https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/network/esp_eth.html](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/network/esp_eth.html)
+
+[https://github.com/espressif/esp-idf/tree/master/examples/ethernet](https://github.com/espressif/esp-idf/tree/master/examples/ethernet)
+
+[https://en.wikipedia.org/wiki/Media-independent_interface](https://en.wikipedia.org/wiki/Media-independent_interface)
+
+[https://electronics.stackexchange.com/questions/215138/how-to-connect-usb-ethernet-shields-to-chassis-or-digital-grounds](https://electronics.stackexchange.com/questions/215138/how-to-connect-usb-ethernet-shields-to-chassis-or-digital-grounds)
+
+# MicroPython Code
+
+Hier ein kurzes Beispiel, wie das Ethernet-Interface in MicroPython aktiviert wird:
 
 ```
 import machine
