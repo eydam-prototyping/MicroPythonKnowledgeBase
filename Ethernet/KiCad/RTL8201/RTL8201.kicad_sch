@@ -1799,7 +1799,7 @@
   (symbol (lib_id "power:GND") (at 218.44 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 108be5ec-dc99-4e48-a64f-3b6ff288cb32)
-    (property "Reference" "#PWR?" (id 0) (at 218.44 143.51 0)
+    (property "Reference" "#PWR025" (id 0) (at 218.44 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 218.44 141.605 0)
@@ -1817,7 +1817,7 @@
   (symbol (lib_id "power:GND") (at 79.375 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 1be69a51-1cb7-4bcd-a6f4-b83be0683b8f)
-    (property "Reference" "#PWR?" (id 0) (at 79.375 143.51 0)
+    (property "Reference" "#PWR06" (id 0) (at 79.375 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 79.375 141.605 0)
@@ -1854,7 +1854,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 193.04 64.77 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 213d1886-4346-46c5-9f48-564ffdca4916)
-    (property "Reference" "H?" (id 0) (at 195.58 62.2299 0)
+    (property "Reference" "H1" (id 0) (at 195.58 62.2299 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole" (id 1) (at 195.58 64.7699 0)
@@ -1872,7 +1872,7 @@
   (symbol (lib_id "power:GND") (at 93.98 50.165 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 23d57968-1ee5-4abf-830e-68a1bd2a9210)
-    (property "Reference" "#PWR?" (id 0) (at 93.98 56.515 0)
+    (property "Reference" "#PWR010" (id 0) (at 93.98 56.515 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 93.98 54.61 0)
@@ -1966,7 +1966,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 193.04 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 36df7d45-4e52-45da-aec2-b6a2f7a786e0)
-    (property "Reference" "H?" (id 0) (at 195.58 73.6599 0)
+    (property "Reference" "H2" (id 0) (at 195.58 73.6599 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole" (id 1) (at 195.58 76.1999 0)
@@ -1984,7 +1984,7 @@
   (symbol (lib_id "power:GNDPWR") (at 245.11 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 386a5684-1925-429e-8bea-4799cf9da3f9)
-    (property "Reference" "#PWR?" (id 0) (at 245.11 142.24 0)
+    (property "Reference" "#PWR026" (id 0) (at 245.11 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDPWR" (id 1) (at 244.983 141.605 0)
@@ -2002,7 +2002,7 @@
   (symbol (lib_id "power:GND") (at 80.645 50.165 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 3d1c4166-92cf-435a-8aba-ce8c335b772d)
-    (property "Reference" "#PWR?" (id 0) (at 80.645 56.515 0)
+    (property "Reference" "#PWR07" (id 0) (at 80.645 56.515 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 80.645 54.61 0)
@@ -2038,7 +2038,7 @@
   (symbol (lib_id "power:GND") (at 120.015 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 49927a1e-0660-4386-a9be-64c3ca55b186)
-    (property "Reference" "#PWR?" (id 0) (at 120.015 143.51 0)
+    (property "Reference" "#PWR012" (id 0) (at 120.015 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 120.015 141.605 0)
@@ -2056,7 +2056,7 @@
   (symbol (lib_id "power:GND") (at 76.2 88.9 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 4a6d9f99-48f5-4aa7-bf29-762dffdd14f5)
-    (property "Reference" "#PWR?" (id 0) (at 76.2 95.25 0)
+    (property "Reference" "#PWR05" (id 0) (at 76.2 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 76.2 93.345 0)
@@ -2074,7 +2074,7 @@
   (symbol (lib_id "power:GND") (at 191.77 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 4d6af886-63eb-4a47-b862-ec74a95d3367)
-    (property "Reference" "#PWR?" (id 0) (at 191.77 143.51 0)
+    (property "Reference" "#PWR020" (id 0) (at 191.77 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 191.77 141.605 0)
@@ -2107,7 +2107,7 @@
   (symbol (lib_id "power:GND") (at 63.5 88.9 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 55160b57-b674-48c7-b688-93ff63c53b2f)
-    (property "Reference" "#PWR?" (id 0) (at 63.5 95.25 0)
+    (property "Reference" "#PWR02" (id 0) (at 63.5 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 63.5 93.345 0)
@@ -2125,7 +2125,7 @@
   (symbol (lib_id "power:GND") (at 146.05 50.165 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 58d87507-69e3-4e7a-93ed-d21a350ee8f0)
-    (property "Reference" "#PWR?" (id 0) (at 146.05 56.515 0)
+    (property "Reference" "#PWR014" (id 0) (at 146.05 56.515 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 146.05 54.61 0)
@@ -2143,7 +2143,7 @@
   (symbol (lib_id "power:GNDPWR") (at 215.265 67.31 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 59564ef9-96c9-4345-9422-0398a9babb4e)
-    (property "Reference" "#PWR?" (id 0) (at 215.265 72.39 0)
+    (property "Reference" "#PWR023" (id 0) (at 215.265 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDPWR" (id 1) (at 215.138 71.755 0)
@@ -2180,7 +2180,7 @@
   (symbol (lib_id "power:GND") (at 169.545 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 607c8299-7bca-450f-ae5a-8a531ccea10b)
-    (property "Reference" "#PWR?" (id 0) (at 169.545 143.51 0)
+    (property "Reference" "#PWR016" (id 0) (at 169.545 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 169.545 141.605 0)
@@ -2198,7 +2198,7 @@
   (symbol (lib_id "power:GND") (at 180.975 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 6d99ddc1-6192-4129-a3ff-dcc71559db90)
-    (property "Reference" "#PWR?" (id 0) (at 180.975 143.51 0)
+    (property "Reference" "#PWR019" (id 0) (at 180.975 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 180.975 141.605 0)
@@ -2232,7 +2232,7 @@
   (symbol (lib_id "power:GND") (at 180.975 94.615 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 79498c08-1889-4b42-8598-6f737788d3b9)
-    (property "Reference" "#PWR?" (id 0) (at 180.975 100.965 0)
+    (property "Reference" "#PWR018" (id 0) (at 180.975 100.965 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 180.975 99.06 0)
@@ -2250,7 +2250,7 @@
   (symbol (lib_id "power:GND") (at 64.77 110.49 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 79571339-54cb-4b3a-bad1-e1d20ab44cdc)
-    (property "Reference" "#PWR?" (id 0) (at 64.77 116.84 0)
+    (property "Reference" "#PWR03" (id 0) (at 64.77 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 64.77 114.935 0)
@@ -2268,7 +2268,7 @@
   (symbol (lib_id "Connector:RJ45_Bel_SI-60062-F") (at 218.44 110.49 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 8ee94359-4174-46b0-9d79-66ae4d0a9185)
-    (property "Reference" "J?" (id 0) (at 218.44 94.615 0))
+    (property "Reference" "J2" (id 0) (at 218.44 94.615 0))
     (property "Value" "RJ45_Bel_SI-60062-F" (id 1) (at 218.44 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2313,7 +2313,7 @@
   (symbol (lib_id "power:GNDPWR") (at 193.04 67.31 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 9c819f9b-14fd-4f85-9479-140c71bc023c)
-    (property "Reference" "#PWR?" (id 0) (at 193.04 72.39 0)
+    (property "Reference" "#PWR021" (id 0) (at 193.04 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDPWR" (id 1) (at 192.913 71.755 0)
@@ -2331,7 +2331,7 @@
   (symbol (lib_id "power:GND") (at 90.17 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 9e263a3e-9e71-457b-aa38-b258b9a86c42)
-    (property "Reference" "#PWR?" (id 0) (at 90.17 143.51 0)
+    (property "Reference" "#PWR09" (id 0) (at 90.17 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 90.17 141.605 0)
@@ -2399,7 +2399,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 215.265 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid aaf345d7-2a78-414f-9d55-0660c015862b)
-    (property "Reference" "H?" (id 0) (at 217.805 73.6599 0)
+    (property "Reference" "H4" (id 0) (at 217.805 73.6599 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole" (id 1) (at 217.805 76.1999 0)
@@ -2455,7 +2455,7 @@
   (symbol (lib_id "power:GNDPWR") (at 215.265 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid be51c35d-edef-429c-93df-4e5dedab01f8)
-    (property "Reference" "#PWR?" (id 0) (at 215.265 83.82 0)
+    (property "Reference" "#PWR024" (id 0) (at 215.265 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDPWR" (id 1) (at 215.138 83.185 0)
@@ -2508,7 +2508,7 @@
   (symbol (lib_id "power:GNDPWR") (at 193.04 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid daa0e277-02d3-44cd-9284-f20d75321e6a)
-    (property "Reference" "#PWR?" (id 0) (at 193.04 83.82 0)
+    (property "Reference" "#PWR022" (id 0) (at 193.04 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDPWR" (id 1) (at 192.913 83.185 0)
@@ -2542,7 +2542,7 @@
   (symbol (lib_id "power:GND") (at 60.325 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid ddd8226c-9305-497e-8c2a-f7e5568e0a1b)
-    (property "Reference" "#PWR?" (id 0) (at 60.325 143.51 0)
+    (property "Reference" "#PWR01" (id 0) (at 60.325 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 60.325 141.605 0)
@@ -2579,7 +2579,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 215.265 64.77 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid e199fbcc-eb54-4388-bf04-25a616e7b9c9)
-    (property "Reference" "H?" (id 0) (at 217.805 62.2299 0)
+    (property "Reference" "H3" (id 0) (at 217.805 62.2299 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole" (id 1) (at 217.805 64.7699 0)
@@ -2597,7 +2597,7 @@
   (symbol (lib_id "power:GND") (at 69.85 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid e489e448-a9da-44b2-bdee-2ebeaf973382)
-    (property "Reference" "#PWR?" (id 0) (at 69.85 143.51 0)
+    (property "Reference" "#PWR04" (id 0) (at 69.85 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 69.85 141.605 0)
@@ -2672,7 +2672,7 @@
   (symbol (lib_id "power:GND") (at 158.115 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid fdd91be5-3fb2-4ec2-ab15-366b5f8e9f98)
-    (property "Reference" "#PWR?" (id 0) (at 158.115 143.51 0)
+    (property "Reference" "#PWR015" (id 0) (at 158.115 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 158.115 141.605 0)
@@ -2692,83 +2692,83 @@
   )
 
   (symbol_instances
+    (path "/ddd8226c-9305-497e-8c2a-f7e5568e0a1b"
+      (reference "#PWR01") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/55160b57-b674-48c7-b688-93ff63c53b2f"
+      (reference "#PWR02") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/79571339-54cb-4b3a-bad1-e1d20ab44cdc"
+      (reference "#PWR03") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/e489e448-a9da-44b2-bdee-2ebeaf973382"
+      (reference "#PWR04") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/4a6d9f99-48f5-4aa7-bf29-762dffdd14f5"
+      (reference "#PWR05") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/1be69a51-1cb7-4bcd-a6f4-b83be0683b8f"
+      (reference "#PWR06") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/3d1c4166-92cf-435a-8aba-ce8c335b772d"
+      (reference "#PWR07") (unit 1) (value "GND") (footprint "")
+    )
     (path "/76839108-d892-45b3-b33b-83cd1f91ecf4"
       (reference "#PWR08") (unit 1) (value "+3.3V") (footprint "")
+    )
+    (path "/9e263a3e-9e71-457b-aa38-b258b9a86c42"
+      (reference "#PWR09") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/23d57968-1ee5-4abf-830e-68a1bd2a9210"
+      (reference "#PWR010") (unit 1) (value "GND") (footprint "")
     )
     (path "/d909ee47-f1db-494b-af67-9bafae50acdc"
       (reference "#PWR011") (unit 1) (value "+3.3V") (footprint "")
     )
+    (path "/49927a1e-0660-4386-a9be-64c3ca55b186"
+      (reference "#PWR012") (unit 1) (value "GND") (footprint "")
+    )
     (path "/0ecc8b9b-0dee-4ef6-bc4a-b4e8afaf8929"
       (reference "#PWR013") (unit 1) (value "+3.3V") (footprint "")
+    )
+    (path "/58d87507-69e3-4e7a-93ed-d21a350ee8f0"
+      (reference "#PWR014") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/fdd91be5-3fb2-4ec2-ab15-366b5f8e9f98"
+      (reference "#PWR015") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/607c8299-7bca-450f-ae5a-8a531ccea10b"
+      (reference "#PWR016") (unit 1) (value "GND") (footprint "")
     )
     (path "/ddba3494-b7fb-4725-ab98-a2466e4746c1"
       (reference "#PWR017") (unit 1) (value "+3.3V") (footprint "")
     )
-    (path "/108be5ec-dc99-4e48-a64f-3b6ff288cb32"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/1be69a51-1cb7-4bcd-a6f4-b83be0683b8f"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/23d57968-1ee5-4abf-830e-68a1bd2a9210"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/386a5684-1925-429e-8bea-4799cf9da3f9"
-      (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
-    )
-    (path "/3d1c4166-92cf-435a-8aba-ce8c335b772d"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/49927a1e-0660-4386-a9be-64c3ca55b186"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/4a6d9f99-48f5-4aa7-bf29-762dffdd14f5"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/4d6af886-63eb-4a47-b862-ec74a95d3367"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/55160b57-b674-48c7-b688-93ff63c53b2f"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/58d87507-69e3-4e7a-93ed-d21a350ee8f0"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/59564ef9-96c9-4345-9422-0398a9babb4e"
-      (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
-    )
-    (path "/607c8299-7bca-450f-ae5a-8a531ccea10b"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    (path "/79498c08-1889-4b42-8598-6f737788d3b9"
+      (reference "#PWR018") (unit 1) (value "GND") (footprint "")
     )
     (path "/6d99ddc1-6192-4129-a3ff-dcc71559db90"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR019") (unit 1) (value "GND") (footprint "")
     )
-    (path "/79498c08-1889-4b42-8598-6f737788d3b9"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/79571339-54cb-4b3a-bad1-e1d20ab44cdc"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    (path "/4d6af886-63eb-4a47-b862-ec74a95d3367"
+      (reference "#PWR020") (unit 1) (value "GND") (footprint "")
     )
     (path "/9c819f9b-14fd-4f85-9479-140c71bc023c"
-      (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
-    )
-    (path "/9e263a3e-9e71-457b-aa38-b258b9a86c42"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/be51c35d-edef-429c-93df-4e5dedab01f8"
-      (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
+      (reference "#PWR021") (unit 1) (value "GNDPWR") (footprint "")
     )
     (path "/daa0e277-02d3-44cd-9284-f20d75321e6a"
-      (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
+      (reference "#PWR022") (unit 1) (value "GNDPWR") (footprint "")
     )
-    (path "/ddd8226c-9305-497e-8c2a-f7e5568e0a1b"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    (path "/59564ef9-96c9-4345-9422-0398a9babb4e"
+      (reference "#PWR023") (unit 1) (value "GNDPWR") (footprint "")
     )
-    (path "/e489e448-a9da-44b2-bdee-2ebeaf973382"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    (path "/be51c35d-edef-429c-93df-4e5dedab01f8"
+      (reference "#PWR024") (unit 1) (value "GNDPWR") (footprint "")
     )
-    (path "/fdd91be5-3fb2-4ec2-ab15-366b5f8e9f98"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    (path "/108be5ec-dc99-4e48-a64f-3b6ff288cb32"
+      (reference "#PWR025") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/386a5684-1925-429e-8bea-4799cf9da3f9"
+      (reference "#PWR026") (unit 1) (value "GNDPWR") (footprint "")
     )
     (path "/c50a1eaa-77a8-4692-aa75-57bc744f521d"
       (reference "C1") (unit 1) (value "22p") (footprint "")
@@ -2795,22 +2795,22 @@
       (reference "C8") (unit 1) (value "100n") (footprint "")
     )
     (path "/213d1886-4346-46c5-9f48-564ffdca4916"
-      (reference "H?") (unit 1) (value "MountingHole") (footprint "")
+      (reference "H1") (unit 1) (value "MountingHole") (footprint "")
     )
     (path "/36df7d45-4e52-45da-aec2-b6a2f7a786e0"
-      (reference "H?") (unit 1) (value "MountingHole") (footprint "")
-    )
-    (path "/aaf345d7-2a78-414f-9d55-0660c015862b"
-      (reference "H?") (unit 1) (value "MountingHole") (footprint "")
+      (reference "H2") (unit 1) (value "MountingHole") (footprint "")
     )
     (path "/e199fbcc-eb54-4388-bf04-25a616e7b9c9"
-      (reference "H?") (unit 1) (value "MountingHole") (footprint "")
+      (reference "H3") (unit 1) (value "MountingHole") (footprint "")
+    )
+    (path "/aaf345d7-2a78-414f-9d55-0660c015862b"
+      (reference "H4") (unit 1) (value "MountingHole") (footprint "")
     )
     (path "/444df49b-08f8-4e40-9a71-a7b6e7fbc81c"
       (reference "J1") (unit 1) (value "Conn_01x02_Male") (footprint "")
     )
     (path "/8ee94359-4174-46b0-9d79-66ae4d0a9185"
-      (reference "J?") (unit 1) (value "RJ45_Bel_SI-60062-F") (footprint "Connector_RJ:RJ45_Bel_SI-60062-F")
+      (reference "J2") (unit 1) (value "RJ45_Bel_SI-60062-F") (footprint "Connector_RJ:RJ45_Bel_SI-60062-F")
     )
     (path "/2dd5e0f9-2a70-47d5-9278-7d1aba00e199"
       (reference "R1") (unit 1) (value "4K7") (footprint "")
